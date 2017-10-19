@@ -5,6 +5,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/test"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/tests"/>
         <property name="context-root" value="spring-web-customer-tracker"/>
         <property name="java-output-path" value="/spring-demo-annotation/target/classes"/>
     </wb-module>
