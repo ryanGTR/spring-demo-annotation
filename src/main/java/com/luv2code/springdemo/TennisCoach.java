@@ -1,8 +1,10 @@
 package com.luv2code.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,8 +20,16 @@ public class TennisCoach implements Coach {
 	}
 	
 	// define my init method
+	@PostConstruct
+	public void doMyStartupStuff() {
+		System.out.println(">> TennisCoach: inside of doMyStartupStuff()");
+	}
 	
 	// define my destory method
+	@PreDestroy
+	public void doMyCleanUpStuff() {
+		System.out.println(">> TennisCoach: inside of doMyCleanUpStuff()");
+	}
 	
 //	@Autowired
 //	public void doSomeCrazyStuff(FortuneService theFortuneService) {
