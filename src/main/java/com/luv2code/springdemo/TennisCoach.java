@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
 public class TennisCoach implements Coach {
 	
 	@Autowired
@@ -17,6 +16,10 @@ public class TennisCoach implements Coach {
 	public TennisCoach() {
 		System.out.println(" >> TennisCoach: inside default constructor");
 	}
+	
+	// define my init method
+	
+	// define my destory method
 	
 //	@Autowired
 //	public void doSomeCrazyStuff(FortuneService theFortuneService) {
